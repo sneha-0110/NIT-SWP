@@ -1,0 +1,75 @@
+.questionPapers {
+  width: 99%;
+  margin: auto;
+  padding-top: 30px;
+  display: flex;
+}
+
+.questionPapers__link {
+  padding: 5px 5px;
+  border-radius: 6px;
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.questionPapers__link > a {
+  color: white !important;
+}
+
+.questionPapers__cardDisplay {
+  width: 70%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 10px;
+}
+
+.questionPapers__link:hover {
+  cursor: pointer;
+  background-color: #777;
+}
+
+.questionPapersSidebar {
+  width: 30%;
+  background-color: rgb(87, 87, 87);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  height: fit-content;
+}
+
+@media (min-width: 1100px) {
+  .questionPapersSidebar {
+    width: 23%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .questionPapers__cardDisplay {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .questionPapers__cardDisplay {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .questionPapers {
+    flex-direction: column;
+  }
+
+  .questionPapersSidebar {
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .questionPapers__cardDisplay {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

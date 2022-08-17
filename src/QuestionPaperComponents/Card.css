@@ -1,0 +1,76 @@
+.card {
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.card2 {
+  height: 300px !important;
+}
+
+.card__hieght {
+  height: fit-content !important;
+}
+
+.card__listContainer::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.card__list {
+  list-style: none;
+}
+
+.card__heading {
+  font-weight: 500;
+  font-size: 25px;
+  background-color: whitesmoke;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.card__headingContainer,
+.card__listContainer {
+  width: 100%;
+}
+
+.card__listContainer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.card__listItem {
+  border: 1px solid whitesmoke;
+  padding: 1px 0px;
+}
+
+.card__listItem:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.card__list {
+  margin-bottom: 20px;
+}
+
+.card__elective {
+  padding: 10px 20px !important;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #a6192e;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.25s ease-out;
+}
+
+.card__elective:hover {
+  box-shadow: 1px 5px 5px 0px rgba(120, 111, 111, 0.75);
+  -webkit-box-shadow: 1px 5px 5px 0px rgba(120, 111, 111, 0.75);
+  -moz-box-shadow: 1px 5px 5px 0px rgba(120, 111, 111, 0.75);
+}

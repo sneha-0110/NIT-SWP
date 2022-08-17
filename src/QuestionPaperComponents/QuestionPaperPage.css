@@ -1,0 +1,30 @@
+.questionPapersPage__container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 98%;
+  margin: auto;
+  column-gap: 10px;
+}
+
+.questionPapersPage__heading {
+  text-align: center;
+  color: #a6192e;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .questionPapersPage__container {
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .questionPapersPage__container {
+    grid-template-columns: auto;
+    row-gap: 10px;
+    width: 80%;
+  }
+}
